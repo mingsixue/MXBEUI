@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MXBEUI - 后台管理系统UI</title>
+    <link rel="stylesheet" href="../css/mxbeui.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../js/libs/wangEditor.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="main.html">MX后台管理系统UI</a>
+        <ul class="navbar-nav">
+            <li class="nav-item item-exit">
+                <span class="iconfont icon-tuichu"></span>退出
+            </li>
+            <li class="nav-item item-user">
+                <img class="img-avatar" src="../images/avatar.jpg">
+                <span class="username">admin</span>
+            </li>
+        </ul>
+    </header>
+    <div class="wrap">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">
+                        MENUS
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="btn.html"><i class="iconfont icon-anniu4"></i>Btn UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html"><i class="iconfont icon-liebiao-copy"></i>List UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="form.html"><i class="iconfont icon-8636f874"></i>Form UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layout.html"><i class="iconfont icon-layout"></i>Layout UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="popup.html"><i class="iconfont icon-popup"></i>Popup UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fonts.html"><i class="iconfont icon-font"></i>Fonts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank"><i class="iconfont icon-headlines"></i>Login</a>
+                    </li>
+                    <li class="nav-title">
+                        Codes
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="codes.html"><i class="iconfont icon-insert_tag_field"></i>示例代码</a>
+                    </li>
+                    <li class="nav-title">
+                        Document
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="document.html"><i class="iconfont icon-shuoming3"></i>说明文档</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="main.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="form.html">表单UI</a>
+                </li>
+                <li class="breadcrumb-item active">form</li>
+            </ol>
+            <div class="content">
+                <div class="card">
+                    <div class="card-header">普通表单
+                    </div>
+                    <div class="card-block">
+                        <!-- 表单ui begin -->
+                        <form class="form">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="name"><i class="redtip">*</i>姓名：</label>
+                                    <input type="text" class="form-control" name="name" placeholder="请输入姓名" maxlength="20" value="">
+                                    <span class="tip">请填写姓名！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="age"><i class="redtip">*</i>年龄：</label>
+                                    <input type="text" class="form-control sm-input" name="age" placeholder="请输入年龄" maxlength="10" value="">
+                                    <span class="tip">请填写年龄！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label><i class="redtip">*</i>性别：</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="gender" value="1" checked>男</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="gender" value="2">女</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label>兴趣爱好：</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="1">编程</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="2">摄影</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="3">设计</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="4">旅游</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="constellation">星座：</label>
+                                    <select class="form-control form-select" name="constellation" value="">
+                                        <option value="-1" >请选择</option>
+                                        <option value="1">白羊座</option>
+                                        <option value="2">金牛座</option>
+                                        <option value="3">双子座</option>
+                                        <option value="4">巨蟹座</option>
+                                        <option value="5">狮子座</option>
+                                        <option value="6">处女座</option>
+                                        <option value="7">天秤座</option>
+                                        <option value="8">天蝎座</option>
+                                        <option value="9">射手座</option>
+                                        <option value="10">摩羯座</option>
+                                        <option value="11">水瓶座</option>
+                                        <option value="12">双鱼座</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-date">
+                                    <label for="birthday">生日：</label>
+                                    <input type="text" class="form-control sm-input" name="birthday" placeholder="请选择生日" maxlength="19" onClick="WdatePicker()" value="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="label-top"><i class="redtip">*</i>个人描述：</label>
+                                    <textarea class="form-control form-textarea" name="digest" placeholder="最多可输入500字" maxlength="500"></textarea>
+                                    <span class="tip">请填写个人描述！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-upload">
+                                    <label for="artistImgs">生活照：</label>
+                                    <a class="btn btn-primary btn-upload">上传</a>
+                                    <input type="file" class="form-control form-file" id="artistImgs" name="file" accept="image/jpg,image/jpeg,image/png">
+                                    <span class="filename">xxx.jpg</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%;"></div>
+                                    </div>
+                                    <span class="help">生活照最多15张，上传图片类型：.jpg .jpeg .png，宽高xxx*xxxpx，单张图片在xxxKB以内</span>
+                                    <ul class="imglist imgartist clearfix">
+                                        <li><img src="../images/2.jpg"><i class="close" title="删除"></i></li>
+                                        <li><img src="../images/1.jpg"><i class="close" title="删除"></i></li>
+                                        <li><img src="../images/2.jpg"><i class="close" title="删除"></i></li>
+                                        <li><img src="../images/4.jpg"><i class="close" title="删除"></i></li>
+                                        <li><img src="../images/3.jpg"><i class="close" title="删除"></i></li>
+                                        <li><img src="../images/2.jpg"><i class="close" title="删除"></i></li>
+                                        <li><img src="../images/2.jpg"><i class="close" title="删除"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="label-top"><i class="redtip">*</i>个人简介：</label>
+                                    <div class="editor-wrap">
+                                        <div id="editor" name="content"></div>
+                                    </div>
+                                    <span class="tip">请填写个人简介！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a class="btn btn-primary btn-save">保存</a>
+                            </div>
+                        </form>
+                        <!-- 表单ui end -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">两列表单
+                    </div>
+                    <div class="card-block">
+                        <!-- 表单ui begin -->
+                        <form class="form">
+                            <div class="row">
+                                <div class="form-group form-inline-group">
+                                    <label for="name"><i class="redtip">*</i>姓名：</label>
+                                    <input type="text" class="form-control sm-input" name="name" placeholder="请输入姓名" maxlength="20" value="">
+                                    <span class="tip">请填写姓名！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-inline-group">
+                                    <label for="age"><i class="redtip">*</i>年龄：</label>
+                                    <input type="text" class="form-control sm-input" name="age" placeholder="请输入年龄" maxlength="10" value="">
+                                    <span class="tip">请填写年龄！</span>
+                                </div>
+                                <div class="form-group form-inline-group">
+                                    <label for="constellation">民族：</label>
+                                    <select class="form-control form-select" name="constellation" value="">
+                                        <option value="-1" >请选择</option>
+                                        <option value="1" selected>汉族</option>
+                                        <option value="2">满族</option>
+                                        <option value="3">壮族</option>
+                                        <option value="4">藏族</option>
+                                        <option value="5">苗族</option>
+                                        <option value="6">蒙古族</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-inline-group form-date">
+                                    <label for="birthday">生日：</label>
+                                    <input type="text" class="form-control sm-input" name="birthday" placeholder="请选择生日" maxlength="19" onClick="WdatePicker()" value="">
+                                </div>
+                                <div class="form-group form-inline-group">
+                                    <label for="constellation">星座：</label>
+                                    <select class="form-control form-select" name="constellation" value="">
+                                        <option value="-1" >请选择</option>
+                                        <option value="1">白羊座</option>
+                                        <option value="2">金牛座</option>
+                                        <option value="3">双子座</option>
+                                        <option value="4">巨蟹座</option>
+                                        <option value="5">狮子座</option>
+                                        <option value="6">处女座</option>
+                                        <option value="7">天秤座</option>
+                                        <option value="8">天蝎座</option>
+                                        <option value="9">射手座</option>
+                                        <option value="10">摩羯座</option>
+                                        <option value="11">水瓶座</option>
+                                        <option value="12">双鱼座</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-inline-group">
+                                    <label><i class="redtip">*</i>性别：</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="gender" value="1" checked>男</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="gender" value="2">女</label>
+                                </div>
+                                <div class="form-group form-inline-group">
+                                    <label>政治面貌：</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="politics" value="1" checked>党员</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="politics" value="2">团员</label>
+                                    <label class="label-radio"><input type="radio" class="form-radio" name="politics" value="3">群众</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-inline-group">
+                                    <label>兴趣爱好：</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="1">编程</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="2">摄影</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="3">设计</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="hobby" value="4">旅游</label>
+                                </div>
+                                <div class="form-group form-inline-group">
+                                    <label>技能：</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="skill" value="1">HTML</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="skill" value="2">CSS</label>
+                                    <label class="label-checkbox"><input type="checkbox" class="form-checkbox" name="skill" value="3">JavaScript</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-upload">
+                                    <label for="imgUrl"><i class="redtip">*</i>公众号：</label>
+                                    <a class="btn btn-primary btn-upload2">上传二维码</a>
+                                    <input type="file" class="form-control form-file" id="imgUrl">
+                                    <span class="filename">xxx.jpg</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 30%;"></div>
+                                    </div>
+                                    <span class="help">可上传图片类型：.jpg .jpeg .png，宽高130*130px，30KB以内，上传图片前请先压缩图片</span>
+                                    <span class="tip">请上传二维码图片！</span>
+                                    <ul class="imglist imgsingle clearfix">
+                                        <li><img src="../images/qrcode.png"><span class="imgname">MXBEUI.png</span><i class="close" title="删除"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="label-top"><i class="redtip">*</i>个人简介：</label>
+                                    <div class="editor-wrap">
+                                        <div id="editor2" name="content"></div>
+                                    </div>
+                                    <span class="tip">请填写个人简介！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a class="btn btn-primary btn-save">保存</a>
+                            </div>
+                        </form>
+                        <!-- 表单ui end -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">表单验证
+                    </div>
+                    <div class="card-block">
+                        <!-- 表单ui begin -->
+                        <form class="form">
+                            <div class="row">
+                                <div class="form-group error">
+                                    <label for="name"><i class="redtip">*</i>姓名：</label>
+                                    <input type="text" class="form-control" name="name" placeholder="请输入姓名" maxlength="20" value="">
+                                    <span class="tip">请填写姓名！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-inline-group error">
+                                    <label for="constellation"><i class="redtip">*</i>民族：</label>
+                                    <select class="form-control form-select" name="constellation" value="">
+                                        <option value="-1" >请选择</option>
+                                        <option value="1" selected>汉族</option>
+                                        <option value="2">满族</option>
+                                        <option value="3">壮族</option>
+                                        <option value="4">藏族</option>
+                                        <option value="5">苗族</option>
+                                        <option value="6">蒙古族</option>
+                                    </select>
+                                    <span class="tip">请选择民族！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-inline-group form-date success">
+                                    <label for="birthday"><i class="redtip">*</i>生日：</label>
+                                    <input type="text" class="form-control sm-input" name="birthday" placeholder="请选择生日" maxlength="19" onClick="WdatePicker()" value="">
+                                    <span class="tip">填写正确！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group error">
+                                    <label class="label-top"><i class="redtip">*</i>个人描述：</label>
+                                    <textarea class="form-control form-textarea" name="digest" placeholder="最多可输入500字" maxlength="500"></textarea>
+                                    <span class="tip">请填写个人描述！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group error">
+                                    <label class="label-top"><i class="redtip">*</i>个人简介：</label>
+                                    <div class="editor-wrap">
+                                        <div id="editor3" name="content"></div>
+                                    </div>
+                                    <span class="tip">请填写个人简介！</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a class="btn btn-primary btn-save" disabled>保存</a>
+                            </div>
+                        </form>
+                        <!-- 表单ui end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 自定义弹窗查看大图 begin -->
+    <div class="mask hide" id="maskBigImg" style="z-index: 10001;">
+        <section class="mask-bigImg">
+            <img src="">
+        </section>
+    </div>
+    <!-- 自定义弹窗查看大图 end -->
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/libs/My97DatePicker/WdatePicker.js"></script>
+    <script src="../js/libs/wangEditor.min.js"></script>
+    <script>
+        //初始化编辑器
+        var E = window.wangEditor;
+        var editor = new E('#editor');
+            editor.customConfig.menus = [
+                'head',
+                'bold',
+                'italic',
+                'underline',
+                'strikeThrough',
+                'foreColor',
+                'backColor',
+                'link',
+                'list',
+                'justify',
+                'quote',
+                'table',
+                'image',
+                'undo',
+                'redo'
+            ];
+            editor.customConfig.uploadImgShowBase64 = true;
+            editor.create();
+
+        var editor2 = new E('#editor2');
+            editor2.customConfig.menus = [
+                'head',
+                'bold',
+                'italic',
+                'underline',
+                'strikeThrough',
+                'foreColor',
+                'backColor',
+                'justify',
+                'undo',
+                'redo'
+            ];
+            editor2.create();
+
+        var editor3 = new E('#editor3');
+            editor3.customConfig.menus = [
+                'head',
+                'bold',
+                'italic',
+                'underline',
+                'strikeThrough',
+                'foreColor',
+                'backColor',
+                'justify',
+                'undo',
+                'redo'
+            ];
+            editor3.create();
+    </script>
+    <script>
+        $(function() {
+            $('.imglist').on('click', 'img', function() {
+                $('#maskBigImg').find('img').attr('src', $(this).attr('src'));
+                $('#maskBigImg').removeClass('hide');
+            });
+
+            $('#maskBigImg').click(function() {
+                $(this).addClass('hide');
+            })
+        });
+    </script>
+</body>
+</html>

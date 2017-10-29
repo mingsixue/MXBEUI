@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MXBEUI - 后台管理系统UI</title>
+    <link rel="stylesheet" href="../css/mxbeui.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <style>
+        .card-row4{text-align: center;}
+        .card-row4 .card-block{height: 150px; line-height: 150px; font-size: 56px;}
+        .card-row4 .card:nth-child(2) .card-block{background: #20a8d8; color: #fff;}
+        .card-row4 .card:nth-child(3) .card-block{background: #f8cb00; color: #fff;}
+        .card-row4 .card:nth-child(4) .card-block{background: #f86c6b; color: #fff;}
+        .card-row4 .iconfont{font-size: 60px;}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="main.html">MX后台管理系统UI</a>
+        <ul class="navbar-nav">
+            <li class="nav-item item-exit">
+                <span class="iconfont icon-tuichu"></span>退出
+            </li>
+            <li class="nav-item item-user">
+                <img class="img-avatar" src="../images/avatar.jpg">
+                <span class="username">admin</span>
+            </li>
+        </ul>
+    </header>
+    <div class="wrap">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">
+                        MENUS
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="btn.html"><i class="iconfont icon-anniu4"></i>Btn UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html"><i class="iconfont icon-liebiao-copy"></i>List UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html"><i class="iconfont icon-8636f874"></i>Form UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="layout.html"><i class="iconfont icon-layout"></i>Layout UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="popup.html"><i class="iconfont icon-popup"></i>Popup UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fonts.html"><i class="iconfont icon-font"></i>Fonts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank"><i class="iconfont icon-headlines"></i>Login</a>
+                    </li>
+                    <li class="nav-title">
+                        Codes
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="codes.html"><i class="iconfont icon-insert_tag_field"></i>示例代码</a>
+                    </li>
+                    <li class="nav-title">
+                        Document
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="document.html"><i class="iconfont icon-shuoming3"></i>说明文档</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="main.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="layout.html">布局UI</a>
+                </li>
+                <li class="breadcrumb-item active">layout</li>
+            </ol>
+            <div class="content">
+                <div class="card">
+                    <div class="card-header">普通布局
+                    </div>
+                    <div class="card-block">
+                        <!-- 布局ui begin -->
+                        <h1>H1标题</h1>
+                        <h2>H2标题</h2>
+                        <h3>H3标题</h3>
+                        <h4>H4标题</h4>
+                        <h5>H5标题</h5>
+                        <p>普通&lt;p&gt;标签</p>
+                        <!-- 布局ui end -->
+                    </div>
+                </div>
+
+                <div class="card-row2">
+                    <div class="card">
+                        <div class="card-header">两列左侧布局
+                        </div>
+                        <div class="card-block">
+                            <!-- 布局ui begin -->
+                            <h1>H1标题</h1>
+                            <h2>H2标题</h2>
+                            <h3>H3标题</h3>
+                            <!-- 布局ui end -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">两列右侧布局
+                        </div>
+                        <div class="card-block">
+                            <!-- 布局ui begin -->
+                            <div class="card-article">
+                                <h2>H2标题H2标题</h2>
+                                <p>深情等待，不怕时光凉薄；爱一个人可以爱到化干戈为玉帛，不怕花事阑珊，与岁月低眉白首，与时光抵足而眠。不敢说再见，只喜站在每一个岁月的路口，等你……</p>
+                                <p>看着烟青的深夜，想起了徐志摩与林徽因的爱情。</p>
+                            </div>
+                            <!-- 布局ui end -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-row2">
+                    <!-- 布局ui begin -->
+                    <div class="card-tabs">
+                        <ul class="tabs-nav">
+                            <li class="nav-item active">Tab1</li>
+                            <li class="nav-item">Tab2</li>
+                            <li class="nav-item">Tab3</li>
+                        </ul>
+                        <div class="tabs-content">
+                            <div class="tab-pane active">
+                                <p>看着烟青的深夜，想起了徐志摩与林徽因的爱情。厦门的这些日子，也像雨雾里的伦敦，好似有意无意地营造一种烟青而浪漫的气氛，每一天都那样若有若无地飘着烟青的雨，朦胧了意境，无休无止。很是偶然的，他们相遇了，一把油纸伞，亦或是一张薛涛纸，从文字到旅行，从现实到梦境，从昨日到明晨，字里行间深深浅浅的笔走着深情。有时候，心动了就彼此沉默。或许，是因为爱了，爱了才会如此。唯有爱了，才会见字如面，看雨生情；唯有爱了。</p>
+                            </div>
+                            <div class="tab-pane">内容2</div>
+                            <div class="tab-pane">内容3</div>
+                        </div>
+                    </div>
+                    <!-- 布局ui end -->
+
+                    <div class="card-tabs">
+                        <ul class="tabs-nav">
+                            <li class="nav-item">Tab1</li>
+                            <li class="nav-item active">Tab2</li>
+                            <li class="nav-item">Tab3</li>
+                        </ul>
+                        <div class="tabs-content">
+                            <div class="tab-pane">内容1</div>
+                            <div class="tab-pane active">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="tab-pane">内容3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-row3">
+                    <div class="card">
+                        <div class="card-header">三列左侧布局
+                        </div>
+                        <div class="card-block">
+                            <!-- 布局ui begin -->
+                            <h1>H1标题</h1>
+                            <h2>H2标题</h2>
+                            <h3>H3标题</h3>
+                            <!-- 布局ui end -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">三列中间布局
+                        </div>
+                        <div class="card-block">
+                            <!-- 布局ui begin -->
+                            <div class="card-article">
+                                <p>深情等待，不怕时光凉薄；爱一个人可以爱到化干戈为玉帛，不怕花事阑珊，与岁月低眉白首，与时光抵足而眠。不敢说再见，只喜站在每一个岁月的路口，等你……</p>
+                                <p>深情等待，不怕时光凉薄；爱一个人可以爱到化干戈为玉帛，不怕花事阑珊，与岁月低眉白首，与时光抵足而眠。不敢说再见，只喜站在每一个岁月的路口，等你……</p>
+                            </div>
+                            <!-- 布局ui end -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">三列右侧布局
+                        </div>
+                        <div class="card-block">
+                            <!-- 布局ui begin -->
+                            <ol>
+                                <li><a href="http://blog.mingsixue.com/it/JS-technique-1.html" target="_blank">JavaScript小技巧</a></li>
+                                <li><a href="http://blog.mingsixue.com/debug/Chrome-cross-domain-set.html" target="_blank">Chrome浏览器跨域设置</a></li>
+                                <li><a href="http://blog.mingsixue.com/it/HTML5-local-memory.html" target="_blank">HTML5 本地存储</a></li>
+                                <li><a href="http://blog.mingsixue.com/effect/JS-reverse-string.html" target="_blank">JS反转字符串</a></li>
+                                <li><a href="http://blog.mingsixue.com/effect/JS-idcard-verification.html" target="_blank">身份证号码验证</a></li>
+                                <li><a href="http://blog.mingsixue.com/it/doT-induction.html" target="_blank">doT模版入门</a></li>
+                                <li><a href="http://blog.mingsixue.com/it/JS-regexp-stock.html" target="_blank">JavaScript常用正则</a></li>
+                                <li><a href="http://blog.mingsixue.com/effect/JS-phone-to-asterisk.html" target="_blank">手机号码中间部分替换成星号</a></li>
+                            </ol>
+                            <!-- 布局ui end -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-row4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="../images/logo.png" alt="MXBEUI logo">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            MX
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            BEUI
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <i class="iconfont icon-code2"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">文章布局
+                    </div>
+                    <div class="card-block">
+                        <!-- 布局ui begin -->
+                        <div class="card-article">
+                            <h1>H1标题H1标题</h1>
+                            <p>深情等待，不怕时光凉薄；爱一个人可以爱到化干戈为玉帛，不怕花事阑珊，与岁月低眉白首，与时光抵足而眠。不敢说再见，只喜站在每一个岁月的路口，等你…….</p>
+                            <p>看着烟青的深夜，想起了徐志摩与林徽因的爱情。厦门的这些日子，也像雨雾里的伦敦，好似有意无意地营造一种烟青而浪漫的气氛，每一天都那样若有若无地飘着烟青的雨，朦胧了意境，无休无止。很是偶然的，他们相遇了，一把油纸伞，亦或是一张薛涛纸，从文字到旅行，从现实到梦境，从昨日到明晨，字里行间深深浅浅的笔走着深情。有时候，心动了就彼此沉默。或许，是因为爱了，爱了才会如此。唯有爱了，才会见字如面，看雨生情；唯有爱了，才会迎风柔软，心似双丝网，中有千千结；也唯有爱了，才会希望茶永远不要凉，酒永远不要停。多少的感动，或许只有爱过了不爱了的人，才能懂得。</p>
+                            <p>夜阑星微，碧浪风推，心思静谧如似纱织的帘帷，朦胧隐约了一世的深情。这样的爱情，适合安静自处，适合以天马行空的宽度去逍遥忽远忽近的距离，适合我在这里、你在那里地相思，适合此一刻的寂寞，只我一个人尝、一个人醉、一个人抚慰淡淡的心碎——烟花易冷，红尘易变，璀璨之后的时空不会恒留永久的繁华。风无言，夜无声，沧海有心，静夜无温，温存只在倏忽刹那间，记忆中的全部徒剩凉薄。如此时，蘸夜为墨，写生鼓浪屿，将一世的深情为厦门的天空以烟花点缀，让情愫绮丽，匀进心境，拽景成画，字也流伤！</p>
+                        </div>
+                        <!-- 布局ui end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

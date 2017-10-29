@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MXBEUI - 后台管理系统UI</title>
+    <link rel="stylesheet" href="../css/mxbeui.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <style>
+        .card-header .iconfont{margin-right: 10px; font-size: 20px; vertical-align: -2px;}
+        .codes-wrap{color: #666;}
+        .codes-wrap hr{height: 1px; margin: 16px 0; background: #e9e9e9; border: none; clear: both;}
+        .codes-wrap p{margin-bottom: 15px;}
+        .codes-wrap blockquote{margin-left: 0; padding-left: 10px; border-left: 4px solid #e9e9e9; color: #999; font-style: italic;}
+        .codes-wrap ol{margin-left: 40px; margin-bottom: 15px;}
+        .codes-wrap ol li{margin-bottom: 5px; list-style: circle;}
+        .codes-wrap pre{padding: 20px!important; background: #f7f7f7; border-radius: 6px;}
+        .codes-wrap pre code{line-height: 1.4;}
+    </style>
+    <link rel="stylesheet" href="../js/libs/prism.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="main.html">MX后台管理系统UI</a>
+        <ul class="navbar-nav">
+            <li class="nav-item item-exit">
+                <span class="iconfont icon-tuichu"></span>退出
+            </li>
+            <li class="nav-item item-user">
+                <img class="img-avatar" src="../images/avatar.jpg">
+                <span class="username">admin</span>
+            </li>
+        </ul>
+    </header>
+    <div class="wrap">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">
+                        MENUS
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="btn.html"><i class="iconfont icon-anniu4"></i>Btn UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html"><i class="iconfont icon-liebiao-copy"></i>List UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html"><i class="iconfont icon-8636f874"></i>Form UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layout.html"><i class="iconfont icon-layout"></i>Layout UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="popup.html"><i class="iconfont icon-popup"></i>Popup UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fonts.html"><i class="iconfont icon-font"></i>Fonts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank"><i class="iconfont icon-headlines"></i>Login</a>
+                    </li>
+                    <li class="nav-title">
+                        Codes
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="codes.html"><i class="iconfont icon-insert_tag_field"></i>示例代码</a>
+                    </li>
+                    <li class="nav-title">
+                        Document
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="document.html"><i class="iconfont icon-shuoming3"></i>说明文档</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="main.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="codes.html">Codes</a>
+                </li>
+                <li class="breadcrumb-item active">示例代码</li>
+            </ol>
+            <div class="content codes-wrap">
+                <div class="card">
+                    <div class="card-header"><i class="iconfont icon-richtextbulletedlist"></i>MXBEUI使用
+                    </div>
+                    <div class="card-block">
+                        <h4>第一步：引入MXBEUI样式文件：</h4>
+                        <pre class="language-html">
+<code>&lt;link rel="stylesheet" type="text/css" href="../css/mxbeui.css"&gt;</code></pre>
+
+                        <h4>第二步：使用MXBEUI定制的HTML结构，例如简单布局结构：</h4>
+                        <pre class="language-html">
+<code>&lt;div class="card"&gt;</code>
+    <code>&lt;div class="card-header"&gt;示例代码&lt;/div&gt;</code>
+    <code>&lt;div class="card-block"&gt;内容&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h4>引入 iconfont 图标字体</h4>
+                        <pre class="language-html">
+<code>&lt;link rel="stylesheet" type="text/css" href="../fonts/iconfont.css"&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><i class="iconfont icon-insert_tag_field"></i>HTML结构
+                    </div>
+                    <div class="card-block">
+                        <p>结构都是HTML代码片段，通过特定 class 来组合使用。</p>
+
+                        <h4>一、布局结构</h4>
+                        <h5>主体结构</h5>
+                        <pre class="language-html">
+<code>&lt;div class="wrap"&gt;</code>
+    <code>&lt;div class="sidebar"&gt;</code>
+        <code>..</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="main"&gt;</code>
+        <code>&lt;ol class="breadcrumb"&gt;</code>
+            <code>..</code>
+        <code>&lt;/ol&gt;</code>
+        <code>&lt;div class="content"&gt;</code>
+            <code>&lt;div class="card"&gt;</code>
+                <code>内容1</code>
+            <code>&lt;/div&gt;</code>
+
+            <code>&lt;div class="card"&gt;</code>
+                <code>内容2</code>
+            <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>菜单结构</h5>
+                        <pre class="language-html">
+<code>&lt;div class="sidebar"&gt;</code>
+    <code>&lt;nav class="sidebar-nav"&gt;</code>
+        <code>&lt;ul class="nav"&gt;</code>
+            <code>&lt;li class="nav-title"&gt;</code>
+                <code>类别1</code>
+            <code>&lt;/li&gt;</code>
+            <code>&lt;li class="nav-item"&gt;</code>
+                <code>&lt;a class="nav-link" href="#"&gt;&lt;i class="iconfont icon-anniu4"&gt;&lt;/i&gt;菜单1&lt;/a&gt;</code>
+            <code>&lt;/li&gt;</code>
+            <code>&lt;li class="nav-item"&gt;</code>
+                <code>&lt;a class="nav-link active" href="#"&gt;&lt;i class="iconfont icon-liebiao-copy"&gt;&lt;/i&gt;菜单2&lt;/a&gt;</code>
+            <code>&lt;/li&gt;</code>
+            <code>&lt;li class="nav-item"&gt;</code>
+                <code>..</code>
+            <code>&lt;/li&gt;</code>
+            <code>&lt;li class="nav-title"&gt;</code>
+                <code>类别2</code>
+            <code>&lt;/li&gt;</code>
+            <code>&lt;li class="nav-item"&gt;</code>
+                <code>&lt;a class="nav-link" href="#"&gt;&lt;i class="iconfont icon-insert_tag_field"&gt;&lt;/i&gt;菜单3&lt;/a&gt;</code>
+            <code>&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+    <code>&lt;/nav&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>面包屑结构</h5>
+                        <pre class="language-html">
+<code>&lt;ol class="breadcrumb"&gt;</code>
+    <code>&lt;li class="breadcrumb-item"&gt;Home&lt;/li&gt;</code>
+    <code>&lt;li class="breadcrumb-item"&gt;</code>
+        <code>&lt;a href="#"&gt;Main&lt;/a&gt;</code>
+    <code>&lt;/li&gt;</code>
+    <code>&lt;li class="breadcrumb-item active"&gt;首页&lt;/li&gt;</code>
+<code>&lt;/ol&gt;</code></pre>
+
+                        <h5>单栏布局</h5>
+                        <pre class="language-html">
+<code>&lt;div class="card"&gt;</code>
+    <code>&lt;div class="card-header"&gt;普通布局&lt;/div&gt;</code>
+    <code>&lt;div class="card-block"&gt;</code>
+        <code>..</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>标题和段落</h5>
+                        <pre class="language-html">
+<code>&lt;div class="card-block"&gt;</code>
+    <code>&lt;h1&gt;H1标签&lt;/h1&gt;</code>
+    <code>&lt;h2&gt;H2标签&lt;/h2&gt;</code>
+    <code>&lt;h3&gt;H3标签&lt;/h3&gt;</code>
+    <code>&lt;h4&gt;H4标签&lt;/h4&gt;</code>
+    <code>&lt;h5&gt;H5标签&lt;/h5&gt;</code>
+    <code>&lt;p&gt;普通p标签&lt;/p&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>两栏布局</h5>
+                        <pre class="language-html">
+<code>&lt;div class="card-row2"&gt;</code>
+    <code>&lt;div class="card"&gt;</code>
+        <code>&lt;div class="card-header"&gt;左栏&lt;/div&gt;</code>
+        <code>&lt;div class="card-block"&gt;</code>
+            <code>..</code>
+        <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="card"&gt;</code>
+        <code>&lt;div class="card-header"&gt;右栏&lt;/div&gt;</code>
+        <code>&lt;div class="card-block"&gt;</code>
+            <code>..</code>
+        <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>其他多栏布局参考上面代码，修改 .card-row2 为 .card-row3&nbsp;&nbsp;&nbsp;&nbsp;.card-row4&nbsp;&nbsp;&nbsp;&nbsp;.card-row5等，同时里面对应card个数，最多支持5栏布局。</p>
+
+                        <h5>Tab布局</h5>
+                        <pre class="language-html">
+<code>&lt;div class="card-tabs"&gt;</code>
+    <code>&lt;ul class="tabs-nav"&gt;</code>
+        <code>&lt;li class="nav-item active"&gt;Tab1&lt;/li&gt;</code>
+        <code>&lt;li class="nav-item"&gt;Tab2&lt;/li&gt;</code>
+    <code>&lt;/ul&gt;</code>
+    <code>&lt;div class="tabs-content"&gt;</code>
+        <code>&lt;div class="tab-pane active"&gt;</code>
+            <code>..</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;div class="tab-pane"&gt;</code>
+            <code>..</code>
+        <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code>
+                        </pre>
+
+
+                        <h4>二、按钮结构</h4>
+                        <pre class="language-html">
+<code>&lt;!--基本结构--&gt;</code>
+<code>&lt;a class="btn"&gt;按钮&lt;/a&gt;</code>
+
+<code>&lt;!--按钮颜色--&gt;</code>
+<code>&lt;a class="btn btn-default"&gt;白底灰边&lt;/a&gt;</code>
+<code>&lt;a class="btn btn-primary"&gt;蓝色&lt;/a&gt;</code>
+<code>&lt;a class="btn btn-success"&gt;绿色&lt;/a&gt;</code>
+<code>&lt;a class="btn btn-warning"&gt;黄色&lt;/a&gt;</code>
+<code>&lt;a class="btn btn-danger"&gt;红色&lt;/a&gt;</code>
+
+<code>&lt;!--大号按钮--&gt;</code>
+<code>&lt;a class="btn btn-big btn-primary"&gt;蓝色大号按钮&lt;/a&gt;</code>
+
+<code>&lt;!--长按钮--&gt;</code>
+<code>&lt;a class="btn btn-long btn-primary"&gt;蓝色长按钮&lt;/a&gt;</code>
+
+<code>&lt;!--禁用按钮--&gt;</code>
+<code>&lt;a class="btn btn-primary" disabled&gt;蓝色禁用按钮&lt;/a&gt;</code></pre>
+                        <p>.btn 是按钮基础 class ，都需要带上。按钮需要禁用直接机上 disabled 属性。</p>
+
+                        <h4>三、列表结构</h4>
+                        <pre class="language-html">
+<code>&lt;table class="table"&gt;</code>
+    <code>&lt;thead&gt;</code>
+        <code>&lt;tr&gt;</code>
+            <code>&lt;th&gt;..&lt;/th&gt;</code>
+            <code>&lt;th&gt;..&lt;/th&gt;</code>
+            <code>&lt;th&gt;..&lt;/th&gt;</code>
+        <code>&lt;/tr&gt;</code>
+    <code>&lt;/thead&gt;</code>
+    <code>&lt;tbody&gt;</code>
+       <code> &lt;tr&gt;</code>
+            <code>&lt;td&gt;..&lt;/td&gt;</code>
+            <code>&lt;td&gt;..&lt;/td&gt;</code>
+            <code>&lt;td&gt;..&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;tr&gt;</code>
+            <code>..</code>
+        <code>&lt;/tr&gt;</code>
+    <code>&lt;/tbody&gt;</code>
+<code>&lt;/table&gt;</code></pre>
+
+                        <p>列表无数据：</p>
+                        <pre class="language-html">
+<code>&lt;table class="table"&gt;</code>
+    <code>&lt;thead&gt;</code>
+        <code>&lt;tr&gt;</code>
+            <code>&lt;th&gt;..&lt;/th&gt;</code>
+            <code>&lt;th&gt;..&lt;/th&gt;</code>
+            <code>&lt;th&gt;..&lt;/th&gt;</code>
+        <code>&lt;/tr&gt;</code>
+    <code>&lt;/thead&gt;</code>
+    <code>&lt;tbody&gt;</code>
+        <code>&lt;tr&gt;</code>
+            <code>&lt;td class="no-data" colspan="3"&gt;暂无数据&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+    <code>&lt;/tbody&gt;</code>
+<code>&lt;/table&gt;</code></pre>
+                        <p>列表需要在 table 上加同名类 .table</p>
+
+                        <h4>四、搜索结构</h4>
+                        <pre class="language-html">
+<code>&lt;div class="card-search"&gt;</code>
+    <code>&lt;div class="search-label"&gt;</code>
+        <code>&lt;strong&gt;字段名1&lt;/strong&gt;</code>
+        <code>&lt;input type="text" class="search-input"&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="search-label"&gt;</code>
+        <code>&lt;strong&gt;字段名2&lt;/strong&gt;</code>
+        <code>&lt;select class="search-select"&gt;</code>
+            <code>&lt;option value="男"&gt;男&lt;/option&gt;</code>
+            <code>&lt;option value="女"&gt;女&lt;/option&gt;</code>
+        <code>&lt;/select&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;a class="btn btn-primary search-btn"&gt;搜索&lt;/a&gt;</code>
+    <code>&lt;a class="btn btn-default search-btn"&gt;重置&lt;/a&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h4>五、分页结构</h4>
+                        <pre class="language-html">
+<code>&lt;div class="pagination-wrap"&gt;</code>
+    <code>&lt;ul class="pagination"&gt;</code>
+        <code>&lt;li class="first disabled" jp-role="first" jp-data="1"&gt;&lt;a&gt;首页&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="prev disabled" jp-role="prev" jp-data="0"&gt;&lt;a&gt;上一页&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="page active" jp-role="page" jp-data="1"&gt;&lt;a&gt;1&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="page" jp-role="page" jp-data="2"&gt;&lt;a&gt;2&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="page" jp-role="page" jp-data="3"&gt;&lt;a&gt;3&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="page" jp-role="page" jp-data="4"&gt;&lt;a&gt;4&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="next" jp-role="next" jp-data="2"&gt;&lt;a&gt;下一页&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li class="last" jp-role="last" jp-data="18"&gt;&lt;a&gt;末页&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;</code>
+            <code>&lt;span&gt;共x条记录 共x页，跳转到第&lt;/span&gt;</code>
+            <code>&lt;input type="text" class="go-input" /&gt;</code>
+            <code>&lt;span&gt;页&lt;/span&gt;</code>
+            <code>&lt;a class="go"&gt;确定&lt;/a&gt;</code>
+        <code>&lt;/li&gt;</code>
+    <code>&lt;/ul&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>分页结构建议封装成函数。</p>
+
+                        <h4>六、表单结构</h4>
+                        <h5>基本结构：</h5>
+                        <pre class="language-html">
+<code>&lt;form class="form"&gt;</code>
+    <code>&lt;div class="row"&gt;</code>
+        <code>...</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="row"&gt;</code>
+        <code>&lt;a class="btn btn-primary"&gt;保存&lt;/a&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/form&gt;</code></pre>
+
+                        <h5>1、Input 输入框</h5>
+                        <pre class="language-html">
+<code>&lt;div class="form-group"&gt;</code>
+    <code>&lt;label for="name"&gt;&lt;i class="redtip"&gt;*&lt;/i&gt;字段名：&lt;/label&gt;</code>
+    <code>&lt;input type="text" class="form-control"&gt;</code>
+    <code>&lt;span class="tip"&gt;提示消息！&lt;/span&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>2、Radio 单选框</h5>
+                        <pre class="language-html">
+<code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="form-group"&gt;</code>
+        <code>&lt;label&gt;&lt;i class="redtip"&gt;*&lt;/i&gt;字段名：&lt;/label&gt;</code>
+        <code>&lt;label class="label-radio"&gt;&lt;input type="radio" class="form-radio" checked&gt;值A&lt;/label&gt;</code>
+        <code>&lt;label class="label-radio"&gt;&lt;input type="radio" class="form-radio"&gt;值B&lt;/label&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>3、Checkbox 复选框</h5>
+                        <pre class="language-html">
+<code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="form-group"&gt;</code>
+        <code>&lt;label&gt;字段名：&lt;/label&gt;</code>
+        <code>&lt;label class="label-checkbox"&gt;&lt;input type="checkbox" class="form-checkbox"&gt;值A&lt;/label&gt;</code>
+        <code>&lt;label class="label-checkbox"&gt;&lt;input type="checkbox" class="form-checkbox"&gt;值B&lt;/label&gt;</code>
+        <code>&lt;label class="label-checkbox"&gt;&lt;input type="checkbox" class="form-checkbox"&gt;值C&lt;/label&gt;</code>
+        <code>..</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>4、Select 下拉选择框</h5>
+                        <pre class="language-html">
+<code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="form-group"&gt;</code>
+        <code>&lt;label&gt;字段名：&lt;/label&gt;</code>
+        <code>&lt;select class="form-control form-select"&gt;</code>
+            <code>&lt;option value="-1" &gt;请选择&lt;/option&gt;</code>
+            <code>&lt;option value=""&gt;值A&lt;/option&gt;</code>
+            <code>&lt;option value=""&gt;值B&lt;/option&gt;</code>
+        <code>&lt;/select&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>5、Textarea 文本域</h5>
+                        <pre class="language-html">
+<code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="form-group"&gt;</code>
+        <code>&lt;label class="label-top"&gt;&lt;i class="redtip"&gt;*&lt;/i&gt;字段名：&lt;/label&gt;</code>
+        <code>&lt;textarea class="form-control form-textarea"&gt;&lt;/textarea&gt;</code>
+        <code>&lt;span class="tip"&gt;提示信息！&lt;/span&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>6、File 文件上传</h5>
+                        <pre class="language-html">
+<code>&lt;!--单图上传--&gt;</code>
+<code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="form-group form-upload"&gt;</code>
+        <code>&lt;label&gt;&lt;i class="redtip"&gt;*&lt;/i&gt;字段名：&lt;/label&gt;</code>
+        <code>&lt;a class="btn btn-primary btn-upload"&gt;上传&lt;/a&gt;</code>
+        <code>&lt;input type="file" class="form-control form-file"&gt;</code>
+        <code>&lt;span class="filename"&gt;xxx.jpg&lt;/span&gt;</code>
+        <code>&lt;div class="progress"&gt;</code>
+            <code>&lt;div class="progress-bar" style="width: 30%;"&gt;&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;span class="help"&gt;可上传图片类型：.jpg .jpeg .png，宽高130*130px，30KB以内，上传图片前请先压缩图片&lt;/span&gt;</code>
+        <code>&lt;span class="tip"&gt;提示消息！&lt;/span&gt;</code>
+        <code>&lt;ul class="imglist imgsingle clearfix"&gt;</code>
+            <code>&lt;li&gt;&lt;img src="xxx"&gt;&lt;span class="imgname"&gt;xxx.jpg&lt;/span&gt;&lt;i class="close" title="删除"&gt;&lt;/i&gt;&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code>
+
+<code>&lt;!--多图上传--&gt;</code>
+        <code>&lt;ul class="imglist clearfix"&gt;</code>
+            <code>&lt;li&gt;&lt;img src="xxx"&gt;&lt;span class="imgname"&gt;xxx.jpg&lt;/span&gt;&lt;i class="close" title="删除"&gt;&lt;/i&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;img src="xxx"&gt;&lt;span class="imgname"&gt;xxx.jpg&lt;/span&gt;&lt;i class="close" title="删除"&gt;&lt;/i&gt;&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code></pre>
+                        <p>需要在 .form-group 上添加类 .form-upload ，才会正常显示上传相关界面</p>
+                        <p>.btn-upload 和 .form-file 必需，其他显示文件名、进度条、缩略图、上传提示等可选。</p>
+                        <p>单图和多图显示样式有区别，通过 .imgsingle 来区分。</p>
+
+                        <h5>7、Editor 文本编辑器</h5>
+                        <pre class="language-html">
+<code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="form-group"&gt;</code>
+        <code>&lt;label class="label-top"&gt;&lt;i class="redtip"&gt;*&lt;/i&gt;字段名：&lt;/label&gt;</code>
+        <code>&lt;div class="editor-wrap"&gt;</code>
+            <code>&lt;div id="editor"&gt;&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;span class="tip"&gt;提示消息！&lt;/span&gt;</code>
+    <code>&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+
+                        <h5>A、验证不通过</h5>
+                        <pre class="language-html">
+<code>&lt;div class="form-group error"&gt;</code>
+    <code>..</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>验证不通过需要在 .form-group 上添加类 .error ，即显示验证不通过样式。</p>
+
+                        <h5>B、验证通过</h5>
+                        <pre class="language-html">
+<code>&lt;div class="form-group success"&gt;</code>
+    <code>..</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>验证通过可在 .form-group 上添加类 .success ，即显示验证通过样式。</p>
+
+                        <h5>行内显示</h5>
+                        <pre class="language-html">
+<code>&lt;div class="form-group form-inline-group"&gt;</code>
+    <code>..</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>可在 .form-group 上添加类 .form-inline-group ，可将单列转换为多列布局（建议2列）。</p>
+
+                        <h5>日期控件</h5>
+                        <pre class="language-html">
+<code>&lt;div class="form-group form-date"&gt;</code>
+    <code>..</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>可在 .form-group 上添加类 .form-date ，可显示日期相关样式。</p>
+
+                        <h5>短输入框</h5>
+                        <pre class="language-html">
+<code>&lt;input type="text" class="form-control sm-input" /&gt;</code></pre>
+                        <p>可在 .form-control 上添加类 .sm-input ，变短输入框。</p>
+
+
+                        <h5>显示必填星号</h5>
+                        <pre class="language-html">
+<code>&lt;i class="redtip"&gt;*&lt;/i&gt;</code></pre>
+
+                        <h5>字段名顶部对齐</h5>
+                        <pre class="language-html">
+<code>&lt;label class="label-top"&gt;&lt;/label&gt;</code></pre>
+
+                        <h4>七、弹窗结构</h4>
+                        <h5>Toast 提示信息</h5>
+                        <pre class="language-html">
+<code>&lt;div class="mask-toast"&gt;提示消息&lt;/div&gt;</code></pre>
+                        <p>Toast 建议封装成JS函数，注意 z-index 层级为当前最高。</p>
+
+                        <h5>Alert 消息框</h5>
+                        <pre class="language-html">
+<code>&lt;div class="mask"&gt;</code>
+    <code>&lt;section class="mask-alert"&gt;</code>
+        <code>&lt;div class="alert-title"&gt;系统消息&lt;a class="alert-close"&gt;&lt;/a&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="alert-content"&gt;这是提示消息！&lt;/div&gt;</code>
+        <code>&lt;div class="alert-btns"&gt;</code>
+            <code>&lt;a class="btn btn-confirm"&gt;确定&lt;/a&gt;</code>
+        <code>&lt;/div&gt;</code>
+    <code>&lt;/section&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>Alert 建议封装成JS函数，注意 z-index 层级为当前最高。</p>
+
+                        <h5>Confirm 确认框</h5>
+                        <pre class="language-html">
+<code>&lt;div class="mask"&gt;</code>
+    <code>&lt;section class="mask-confirm"&gt;</code>
+        <code>&lt;div class="alert-title"&gt;系统消息&lt;a class="alert-close"&gt;&lt;/a&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="alert-content"&gt;确认提示内容？&lt;/div&gt;</code>
+        <code>&lt;div class="alert-btns"&gt;</code>
+            <code>&lt;a class="btn btn-cancel"&gt;取消&lt;/a&gt;</code>
+            <code>&lt;a class="btn btn-confirm"&gt;确定&lt;/a&gt;</code>
+        <code>&lt;/div&gt;</code>
+    <code>&lt;/section&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>Confirm 建议封装成JS函数，注意 z-index 层级为当前最高。</p>
+
+                        <h5>bigImage 查看大图</h5>
+                        <pre class="language-html">
+<code>&lt;div class="mask"&gt;</code>
+    <code>&lt;section class="mask-bigImg"&gt;</code>
+        <code>&lt;img src="xx"&gt;</code>
+    <code>&lt;/section&gt;</code>
+<code>&lt;/div&gt;</code></pre>
+                        <p>建议封装成JS函数，注意 z-index 层级为当前最高。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/libs/prism.js"></script>
+</body>
+</html>

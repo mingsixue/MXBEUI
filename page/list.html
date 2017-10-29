@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MXBEUI - 后台管理系统UI</title>
+    <link rel="stylesheet" href="../css/mxbeui.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="main.html">MX后台管理系统UI</a>
+        <ul class="navbar-nav">
+            <li class="nav-item item-exit">
+                <span class="iconfont icon-tuichu"></span>退出
+            </li>
+            <li class="nav-item item-user">
+                <img class="img-avatar" src="../images/avatar.jpg">
+                <span class="username">admin</span>
+            </li>
+        </ul>
+    </header>
+    <div class="wrap">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">
+                        MENUS
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="btn.html"><i class="iconfont icon-anniu4"></i>Btn UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="list.html"><i class="iconfont icon-liebiao-copy"></i>List UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html"><i class="iconfont icon-8636f874"></i>Form UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layout.html"><i class="iconfont icon-layout"></i>Layout UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="popup.html"><i class="iconfont icon-popup"></i>Popup UI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fonts.html"><i class="iconfont icon-font"></i>Fonts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank"><i class="iconfont icon-headlines"></i>Login</a>
+                    </li>
+                    <li class="nav-title">
+                        Codes
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="codes.html"><i class="iconfont icon-insert_tag_field"></i>示例代码</a>
+                    </li>
+                    <li class="nav-title">
+                        Document
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="document.html"><i class="iconfont icon-shuoming3"></i>说明文档</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="main.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="list.html">列表UI</a>
+                </li>
+                <li class="breadcrumb-item active">list</li>
+            </ol>
+            <div class="content">
+                <div class="card">
+                    <div class="card-header">普通列表
+                    </div>
+                    <div class="card-block">
+                        <!-- 列表ui begin -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>年龄</th>
+                                    <th>部门</th>
+                                    <th>岗位</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>vic</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端工程师</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangxia4" title="下移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>vic.wang</td>
+                                    <td>26</td>
+                                    <td>技术研发部</td>
+                                    <td>高级前端工程师</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangshang4" title="上移"></a>
+                                        <a class="iconfont icon-xiangxia4" title="下移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>纳兰雪</td>
+                                    <td>27</td>
+                                    <td>技术开发部</td>
+                                    <td>资深前端工程师</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangshang4" title="上移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 列表ui end -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">带按钮组列表
+                        <!-- 按钮组ui begin -->
+                        <div class="card-btns">
+                            <a class="btn btn-default">默认</a>
+                            <a class="btn btn-primary">新增</a>
+                            <a class="btn btn-warning">预览</a>
+                            <a class="btn btn-success">提交</a>
+                            <a class="btn btn-danger">删除</a>
+                        </div>
+                        <!-- 按钮组ui end -->
+                    </div>
+                    <div class="card-block">
+                        <!-- search bar begin -->
+                        <div class="card-search">
+                            <div class="search-label">
+                                <strong>姓名</strong>
+                                <input type="text" class="search-input">
+                            </div>
+                            <div class="search-label">
+                                <strong>门派</strong>
+                                <input type="text" class="search-input">
+                            </div>
+                            <div class="search-label">
+                                <strong>性别</strong>
+                                <select class="search-select">
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                </select>
+                            </div>
+                            <a class="btn btn-primary search-btn">搜索</a>
+                            <a class="btn btn-default search-btn">重置</a>
+                        </div>
+                        <!-- search bar end -->
+
+                        <!-- 列表ui begin -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>门派</th>
+                                    <th>武器</th>
+                                    <th>武功</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>梁萧</td>
+                                    <td>男</td>
+                                    <td></td>
+                                    <td>天罚剑</td>
+                                    <td>碧海惊涛掌、碧微箭</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangxia4" title="下移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>梁思禽</td>
+                                    <td>男</td>
+                                    <td>西城</td>
+                                    <td></td>
+                                    <td>周流六虚功</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangshang4" title="上移"></a>
+                                        <a class="iconfont icon-xiangxia4" title="下移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>柳莺莺</td>
+                                    <td>女</td>
+                                    <td>天山派</td>
+                                    <td>胭脂</td>
+                                    <td>扫慧功、阴魔指</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangshang4" title="上移"></a>
+                                        <a class="iconfont icon-xiangxia4" title="下移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>花晓霜</td>
+                                    <td>女</td>
+                                    <td>天机宫</td>
+                                    <td></td>
+                                    <td>医术</td>
+                                    <td>
+                                        <a class="iconfont icon-xiangshang4" title="上移"></a>
+                                        <a class="iconfont icon-bianji5" title="修改"></a>
+                                        <a class="iconfont icon-shanchu4" title="删除"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 列表ui end -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">无数据列表
+                    </div>
+                    <div class="card-block">
+                        <!-- 按钮组ui begin -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>门派</th>
+                                    <th>武器</th>
+                                    <th>武功</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="no-data" colspan="7">暂无数据</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 列表ui end -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">带分页列表
+                    </div>
+                    <div class="card-block">
+                        <!-- 按钮组ui begin -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>年龄</th>
+                                    <th>部门</th>
+                                    <th>岗位</th>
+                                    <th width="350">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 列表ui end -->
+                    </div>
+
+                    <!-- 分页ui begin -->
+                    <div class="pagination-wrap">
+                        <ul class="pagination">
+                            <li class="first disabled" jp-role="first" jp-data="1"><a>首页</a></li>
+                            <li class="prev disabled" jp-role="prev" jp-data="0"><a>上一页</a></li>
+                            <li class="page active" jp-role="page" jp-data="1"><a>1</a></li>
+                            <li class="page" jp-role="page" jp-data="2"><a>2</a></li>
+                            <li class="page" jp-role="page" jp-data="3"><a>3</a></li>
+                            <li class="page" jp-role="page" jp-data="4"><a>4</a></li>
+                            <li class="next" jp-role="next" jp-data="2"><a>下一页</a></li>
+                            <li class="last" jp-role="last" jp-data="17"><a>末页</a></li>
+                        </ul>
+                    </div>
+                    <!-- 分页ui end -->
+                </div>
+
+                <div class="card">
+                    <div class="card-header">带分页列表2
+                    </div>
+                    <div class="card-block">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>年龄</th>
+                                    <th>部门</th>
+                                    <th>岗位</th>
+                                    <th width="350">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 分页ui begin -->
+                    <div class="pagination-wrap">
+                        <ul class="pagination">
+                            <li class="first disabled" jp-role="first" jp-data="1"><a>首页</a></li>
+                            <li class="prev disabled" jp-role="prev" jp-data="0"><a>上一页</a></li>
+                            <li class="page active" jp-role="page" jp-data="1"><a>1</a></li>
+                            <li class="page" jp-role="page" jp-data="2"><a>2</a></li>
+                            <li class="page" jp-role="page" jp-data="3"><a>3</a></li>
+                            <li class="page" jp-role="page" jp-data="4"><a>4</a></li>
+                            <li class="next" jp-role="next" jp-data="2"><a>下一页</a></li>
+                            <li class="last" jp-role="last" jp-data="17"><a>末页</a></li>
+                            <li>
+                                <span>共50条记录 共19页，跳转到第</span>
+                                <input type="text" class="go-input" />
+                                <span>页</span>
+                                <a class="go">确定</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 分页ui end -->
+                </div>
+
+                <div class="card">
+                    <div class="card-header">全选列表
+                    </div>
+                    <div class="card-block">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><input type="radio" name="radio"></th>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>年龄</th>
+                                    <th>部门</th>
+                                    <th>岗位</th>
+                                    <th width="350">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" name="radio"></td>
+                                    <td>1</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radio"></td>
+                                    <td>2</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radio"></td>
+                                    <td>3</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radio"></td>
+                                    <td>4</td>
+                                    <td>纳兰雪</td>
+                                    <td>男</td>
+                                    <td>27</td>
+                                    <td>技术部</td>
+                                    <td>前端开发</td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card banner-wrap banner-publish">
+                    <div class="card-header">组合列表
+                        <div class="card-btns">
+                            <a class="btn btn-primary">新增新闻</a>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <!-- 按钮组ui begin -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th width="220">新闻标题</th>
+                                    <th width="250">链接</th>
+                                    <th width="250">摘要</th>
+                                    <th width="180">新闻封面</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>JavaScript常用正则</td>
+                                    <td><a href="http://blog.mingsixue.com/it/JS-canvas-cross-domain.html" target="_blank">http://blog.mingsixue.com/it/JS-canvas-cross-domain.html</a></td>
+                                    <td>JavaScript常用的正则表达式例子...</td>
+                                    <td><img src="../images/img.jpg"></td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="http://blog.mingsixue.com/it/doT-induction.html" target="_blank">doT模版入门</a></td>
+                                    <td>doT-induction.html</td>
+                                    <td>doT.JS模版库语法介绍</td>
+                                    <td></td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="http://blog.mingsixue.com/effect/JS-name-to-asterisk.html" target="_blank">姓名显示最后一字其他替换成星号</a></td>
+                                    <td></td>
+                                    <td>字符替换</td>
+                                    <td></td>
+                                    <td>
+                                        <a class="btn btn-warning">查看</a>
+                                        <a class="btn btn-success">修改</a>
+                                        <a class="btn btn-danger">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 列表ui end -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
