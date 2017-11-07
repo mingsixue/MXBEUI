@@ -26,7 +26,7 @@ MXBEUI（MX Backend Manage System UI）是一套轻量级后台管理系统UI，
 * 不提供低分辨率适配
 
 ### 示例代码
-[DEMO Codes](http://mxbeui.mingsixue.com/page/codes.html)
+* [DEMO Codes](http://mxbeui.mingsixue.com/page/codes.html)
 
 ### 说明文档：
 * [IconFont图标使用](http://mxbeui.mingsixue.com/page/document.html#iconfont)
