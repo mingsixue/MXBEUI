@@ -26,9 +26,9 @@ MXBEUI（MX Backend Manage System UI）是一套轻量级后台管理系统UI，
 * 不提供低分辨率适配
 
 ### 示例代码
-[http://mxbeui.mingsixue.com/page/codes.html](DEMO Codes)
+[DEMO Codes](http://mxbeui.mingsixue.com/page/codes.html)
 
 ### 说明文档：
-* [http://mxbeui.mingsixue.com/page/document.html#iconfont](IconFont图标使用)
-* [http://mxbeui.mingsixue.com/page/document.html#wangeditor](WangEditor编辑器使用)
-* [http://mxbeui.mingsixue.com/page/document.html#my97datepicker](My97DatePicker日期控件使用)
+* [IconFont图标使用](http://mxbeui.mingsixue.com/page/document.html#iconfont)
+* [WangEditor编辑器使用](http://mxbeui.mingsixue.com/page/document.html#wangeditor)
+* [My97DatePicker日期控件使用](http://mxbeui.mingsixue.com/page/document.html#my97datepicker)
