@@ -419,6 +419,7 @@ body{
                     text-align: center;
                 }
                 .close{
+                    position: absolute; top: 0; right: 0;
                     &::after{
                         content: "\e632";
                         font-family: 'iconfont';
@@ -728,6 +729,15 @@ body{
                     .close{
                         &::after{
                             top: -15px;
+                        }
+                    }
+                }
+            }
+            .imgsingle{
+                li{
+                    .close{
+                        &::after{
+                            top: 0;
                         }
                     }
                 }
