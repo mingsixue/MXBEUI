@@ -198,6 +198,15 @@ body{
         }
         td{
             padding: 0 5px;
+            &.left{
+                text-align: left;
+            }
+            &.right{
+                text-align: right;
+            }
+            &.center{
+                text-align: center;
+            }
             a{
                 word-break: break-all;
                 &[href]{
@@ -1237,6 +1246,38 @@ body{
 .card-row4,.card-tabs{
     .card{
         width: 25%;
+    }
+}
+
+// 编辑器
+.editor-wrap{
+    .w-e-list,
+    .w-e-block{
+        margin-left: 0;
+    }
+    .w-e-item{
+        line-height: 21px;
+        list-style-type: none;
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+        h1{
+            line-height: 36px;
+        }
+        h2{
+            line-height: 30px;
+        }
+        h3{
+            line-height: 24px;
+        }
+        h4{
+            line-height: 18px;
+        }
+        h5{
+            line-height: 14px;
+        }
     }
 }
 
