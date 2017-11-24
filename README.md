@@ -7,6 +7,8 @@
 
 官网：[http://mxbeui.mingsixue.com](http://mxbeui.mingsixue.com)
 
+版本：V1.0.1
+
 * 适用于没有UI设计，没有视觉设计的项目
 * 适用于企业网站后台、小项目后台
 * 适用于对界面布局无从下手的开发者
