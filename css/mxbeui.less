@@ -2,8 +2,8 @@
 
 /* CSS Document */
 /******************************
-** 文件描述 :  MXBEUI库 v1.0
-** 时    间 ： 2017.10
+** 文件描述 :  MXBEUI库 v1.0.1
+** 时    间 ： 2017.11
 ** 作    者 ： wangweimin
 ** Email ：mingsixue@163.com
 *******************************/
@@ -360,10 +360,6 @@ body{
                 background: #fff;
                 border-color: #8ad4ee;
                 outline: none;
-            }
-            &[disabled],
-            &[readonly]{
-                background: #f5f0f0;
             }
         }
         .sm-input{
@@ -903,16 +899,39 @@ body{
 // 菜单栏
 .sidebar{
     position: fixed;
-    height: 100%;
+    //height: 100%;
+    height: ~"calc(100vh - 56px)";
     background: #263238;
     color: #fff;
+    display: flex;
+    flex-direction: column;
     flex: 0 0 200px;
     order: -1;
     .sidebar-nav{
         position: relative;
+        flex: 1;
         overflow-x: hidden;
         overflow-y: auto;
         width: 200px;
+        &::-webkit-scrollbar {
+            position: absolute;
+            width: 10px;
+            margin-left: -10px;
+            -webkit-appearance: none;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #33444c;
+            border-right: 1px solid #1f292e;
+            border-left: 1px solid #1f292e;
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 50px;
+            background-color: #151b1f;
+            background-clip: content-box;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 1px 2px;
+        }
     }
     .nav{
         display: flex;
@@ -920,10 +939,68 @@ body{
         flex-direction: column !important;
         .nav-title{
             padding: 0.75rem 1rem;
-            background: #304047;
+            background: #33444c;
             color: #cfd8dc;
             font-size: 14px;
             font-weight: bold;
+        }
+        .nav-subtitle{
+            position: relative;
+            border-top: 1px solid #293f4a;
+            .nav-subtitle-menu{
+                display: block;
+                padding: 0.75rem 1rem;
+                background: #29363d;
+                color: #f2f2f2;
+                font-size: 16px;
+                font-weight: normal;
+                &::before{
+                    content: '\f27d';
+                    position: absolute; top: 21px; right: 0.3rem;
+                    display: block;
+                    padding: 0;
+                    margin-top: -18px;
+                    color: #3d8fc3;
+                    font-family: 'iconfont';
+                    font-size: 36px;
+                    font-weight: normal;
+                    transition: transform .3s;
+                    transform: rotate(0deg);
+                }
+                &:hover{
+                    color: #fff !important;
+                    background: #20a8d8 !important;
+                    cursor: pointer;
+                    text-decoration: none;
+                    &::before{
+                        color: #fff;
+                    }
+                }
+            }
+            .nav-dropdown-items{
+                max-height: 0;
+                width: 200px;
+                overflow-y: hidden;
+                transition: max-height .3s ease-in-out;
+                .nav-item{
+                    background: #222B31;
+                    font-weight: normal;
+                    a{
+                        padding-left: 25px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            &.open{
+                .nav-subtitle-menu{
+                    &::before{
+                        transform: rotate(-90deg);
+                    }
+                }
+                .nav-dropdown-items{
+                    max-height: 1000px;
+                }
+            }
         }
         .nav-item{
             position: relative;
@@ -942,12 +1019,12 @@ body{
                     color: #fff !important;
                     background: #20a8d8 !important;
                 }
-                .iconfont{
-                    margin-right: 8px;
-                    font-size: 20px;
-                    vertical-align: -1px;
-                }
             }
+        }
+        .iconfont{
+            margin-right: 8px;
+            font-size: 18px;
+            vertical-align: -1px;
         }
     }
 }
