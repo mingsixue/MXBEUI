@@ -28,9 +28,9 @@
 * 不提供低分辨率适配
 
 ### 示例代码
-* [DEMO Codes](http://mxbeui.mingsixue.com/page/codes.html)
+* [DEMO Codes](https://www.mingsixue.com/mxbeui/page/codes.html)
 
 ### 说明文档：
-* [IconFont图标使用](http://mxbeui.mingsixue.com/page/document.html#iconfont)
-* [WangEditor编辑器使用](http://mxbeui.mingsixue.com/page/document.html#wangeditor)
-* [My97DatePicker日期控件使用](http://mxbeui.mingsixue.com/page/document.html#my97datepicker)
+* [IconFont图标使用](https://www.mingsixue.com/mxbeui/page/document.html#iconfont)
+* [WangEditor编辑器使用](https://www.mingsixue.com/mxbeui/page/document.html#wangeditor)
+* [My97DatePicker日期控件使用](https://www.mingsixue.com/mxbeui/page/document.html#my97datepicker)
