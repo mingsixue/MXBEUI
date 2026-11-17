@@ -5,7 +5,7 @@
 
 仿CoreUI界面风格，但比CoreUI轻量，只提供界面UI，不提供功能。
 
-官网：[http://mxbeui.mingsixue.com](http://mxbeui.mingsixue.com)
+官网：[https://www.mingsixue.com/mxbeui](http://www.mingsixue.com/mxbeui)
 
 版本：V1.0.1
 
